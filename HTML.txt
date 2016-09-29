@@ -1,0 +1,18 @@
+<!DOCTYPE html> <!-- Commentaire -->
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="tableaux.css" />
+        <title>Exo Tableaux</title>
+    </head>
+
+
+
+    <body>
+
+
+
+    </body>
+
+</html>

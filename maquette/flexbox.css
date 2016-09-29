@@ -1,0 +1,58 @@
+#flex-container
+{
+    display: flex;
+}
+
+.flex-item
+{
+
+}
+
+.flex-item:nth-child(1)
+{
+    
+}
+
+.flex-item:nth-child(2)
+{
+
+}
+
+#conteneur
+{
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    border: 2px solid #444;
+}
+
+.element
+{
+	width: 300px;
+	height: auto;
+}
+
+.element:nth-child(1)
+{
+    background-color: orange;
+}
+
+.element:nth-child(2)
+{
+    background-color: blue;
+}
+
+.element:nth-child(3)
+{
+    background-color: #ad6;
+}
+
+.element:nth-child(4)
+{
+    background-color: orange;
+}
+
+.element:nth-child(5)
+{
+    background-color: blue;
+}

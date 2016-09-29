@@ -1,0 +1,327 @@
+/* FLEXBOX */
+
+
+#flex-container /* bloc Nav et Sections */
+{
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.flex-item
+{
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+}
+
+.flex-item:nth-child(1) /* nav */
+{
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+}
+
+.flex-item:nth-child(2) /* section */
+{
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+}
+
+.nav
+{
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-align-content: space-around;
+    -ms-flex-line-pack: distribute;
+    align-content: space-around;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+
+}
+
+.nav:nth-child(1) /* info perso */
+{
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+
+}
+
+.nav:nth-child(2) /* me contacter */
+{
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+}
+
+.nav:nth-child(3) /* bouton cv */
+{
+    -webkit-order: 3;
+    -ms-flex-order: 3;
+    order: 3;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+}
+
+#conteneur /* bloc section */
+{
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-align-content: space-around;
+    -ms-flex-line-pack: distribute;
+    align-content: space-around;
+    background: grey;
+}
+
+.element /* articles */
+{
+    max-width: 400px;
+    height: auto;
+    padding: 0px 10px 0px 10px; /* top - right - bottom - left */
+    margin-right: 4px;
+    background: silver;
+}
+
+.element:nth-child(1) /* Article : Mes compétences */
+{
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+}
+
+.element:nth-child(2) /* Article : Mes connaissances */
+{
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+}
+
+.element:nth-child(3) /* Article : Mes fotmations */
+{
+    -webkit-order: 3;
+    -ms-flex-order: 3;
+    order: 3;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+}
+
+.element:nth-child(4) /* Article : Mes expériences professionnelles */
+{
+    -webkit-order: 4;
+    -ms-flex-order: 4;
+    order: 4;
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+}
+
+.element:nth-child(5) /* Article : Mes centres d'intérêts */
+{
+    -webkit-order: 5;
+    -ms-flex-order: 5;
+    order: 5;
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+}
+
+
+/* MISE EN PAGE */
+
+
+body
+{
+	font-family: Verdana, Arial, sans-serif;
+	background-color: #f2f2f2;
+    text-align: center;
+}
+
+header
+{
+    margin: 0px 0px 6px 6px; /* top - right - bottom - left */
+    border-bottom:1px solid #E4E4E4;
+    text-align: left;
+}
+
+h1, h2
+{
+	color : #76c39f;
+}
+
+#flex-container /* bloc Nav et Sections */
+{
+    margin: 14px 4px 4px 4px; /* top - right - bottom - left */
+}
+
+nav
+{
+    background-color: #E4E4E4;
+	border-radius: 10px;
+	padding: 0px 10px 30px 10px; /* top - right - bottom - left */
+	max-width: 240px;
+}
+
+p, ul
+{
+	font-size: 0.8em;
+}
+
+.gras
+{
+	font-weight: bold;
+	color: #de4347;
+}
+
+.gras-left /* p à gauche */
+{
+    font-weight: bold;
+    color: #de4347;
+    text-align: left;
+}
+
+a
+{
+	color: black;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #de4347;
+}
+
+/*a:visited
+{
+	color: #999999;
+}*/
+
+ul
+{
+    list-style-type: none;
+}
+
+footer
+{
+	padding: 10px;
+	margin: 4px;
+}
+
+
+
+/* RESPONSIVE */
+
+
+
+@media screen and (max-width: 1024px)
+
+{
+
+	#flex-container /* bloc Nav et Sections */
+	{
+		display: -ms-flexbox;
+    	display: -webkit-flex;
+		display: flex;
+		flex-direction: column;
+    	justify-content: space-around;
+   		align-content: space-around;
+	}
+
+	nav
+	{
+		max-width: none;
+	}
+
+    .nav:nth-child(3) /* bouton cv */
+{
+    margin-bottom: 6px;
+}
+
+
+	#conteneur /* bloc section */
+	{
+		display: -ms-flexbox;
+    	display: -webkit-flex;
+   		display: flex;
+   		-webkit-flex-direction: column;
+    	-ms-flex-direction: column;
+   		flex-direction: column;
+   		-webkit-flex-wrap: wrap;
+    	-ms-flex-wrap: wrap;
+    	flex-wrap: wrap;
+    	-webkit-justify-content: space-around;
+    	-ms-flex-pack: distribute;
+   		justify-content: space-around;
+   		-webkit-align-content: space-around;
+    	-ms-flex-line-pack: distribute;
+   		align-content: space-around;
+	}
+
+	.element /* articles */
+	{
+		max-width: 1024px;
+		height: auto;
+		padding: 10px;
+		margin: 4px;
+	}
+
+}

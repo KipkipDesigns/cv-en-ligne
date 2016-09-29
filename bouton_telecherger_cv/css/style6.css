@@ -1,0 +1,130 @@
+a
+{
+    text-decoration: none; /* enlève le surlignement des liens */
+}
+
+.a-btn
+{
+    width:120px; /* largeur */
+    height:120px; /*  hauteur */
+    -webkit-border-radius:50%; /* pour Webkit (Chrome, Safari, Android...) */
+    -moz-border-radius:50%; /*pour Gecko (Mozilla) il y a aussi -o- pour Opera et -khtml- pour KHTML (Konqueror)
+ Mais la fameuse propriété border-radius à été implémentée par Opera 10.5 directement sans préfixe, puis suite à sa finalisation, l'ont fait également Safari 5.0, Chrome 5.0, Firefox 4.0 et Internet Explorer 9.*/
+    border-radius:50%; /* bordure avec arrondie */
+    display:block;
+    margin:20px; /* marges extérieures */
+    float:left;
+    background:#f0ad4e; /* font */
+    position:relative;
+    -webkit-box-shadow:0px 0px 5px 0px rgba(246, 212, 163, 0.5) inset, 0px -1px 5px 4px rgba(170, 77, 27, 0.2) inset, 0px 0px 0px 7px #fff,  0px 0px 1px 8px rgba(188, 188, 188, 0.4), 0px 0px 0px 9px #fff;
+    -moz-box-shadow:0px 0px 5px 0px rgba(246, 212, 163, 0.5) inset, 0px -1px 5px 4px rgba(170, 77, 27, 0.2) inset, 0px 0px 0px 7px #fff,  0px 0px 1px 8px rgba(188, 188, 188, 0.4), 0px 0px 0px 9px #fff;
+    box-shadow:0px 0px 5px 0px rgba(246, 212, 163, 0.5) inset, 0px -1px 5px 4px rgba(170, 77, 27, 0.2) inset, 0px 0px 0px 7px #fff,  0px 0px 1px 8px rgba(188, 188, 188, 0.4), 0px 0px 0px 9px #fff; /* met une ombre porté sur n'importe quel élément */
+    -webkit-transition:all 0.3s linear;
+    -moz-transition:all 0.3s linear;
+    -o-transition:all 0.3s linear;
+    transition:all 0.3s linear;
+}
+
+.a-btn span
+{
+    display:table-cell;
+    width:80px;
+    height:80px;
+    padding:20px; /* marges intérieures */
+    text-align:center; /* alignement du texte */
+    vertical-align:middle; /* met l'élément au milieu du bouton */
+    font-size:26px; /* taille du texte */
+    color:#fff; /* couleur texte */
+    text-shadow:0px 1px 1px #A03F16; /* texte avec ombre */
+    font-family:"Arvo", "Myriad Pro", "Trebuchet MS", sans-serif; /* police du texte */
+    -webkit-transition:all 0.3s linear;
+    -moz-transition:all 0.3s linear;
+    -o-transition:all 0.3s linear;
+    transition:all 0.3s linear;
+}
+
+.a-btn span:nth-child(1), .a-btn span:nth-child(3)
+{
+    position:absolute; /* place un élément n'importe où sur la page */
+    font-size:40px;
+    line-height:80px; /* possitionnement du 2ème mot */
+}
+
+.a-btn span:nth-child(1)
+{
+    padding: 0 20 20 20px;
+    background:transparent url(../images/triangle.png) no-repeat center center;
+    opacity:0.2; /* opacité triangle */
+}
+
+.a-btn span:nth-child(3)
+{
+    top:0px;
+    left:0px;
+    opacity:0; /* opacité du 2ème mot qui apparait donc ici "My cv*/
+}
+
+.a-btn:hover
+{
+    background:rgba(170, 77, 27, 0.6);
+    -webkit-box-shadow:0px 0px 5px 0px rgba(246, 212, 163, 0.5) inset, 0px -1px 5px 4px rgba(170, 77, 27, 0.2) inset, 0px 0px 0px 7px #fff,  1px 4px 5px 8px rgba(188, 188, 188, 0.6), 0px 0px 0px 9px #fff;
+    -moz-box-shadow:0px 0px 5px 0px rgba(246, 212, 163, 0.5) inset, 0px -1px 5px 4px rgba(170, 77, 27, 0.2) inset, 0px 0px 0px 7px #fff,  1px 4px 5px 8px rgba(188, 188, 188, 0.6), 0px 0px 0px 9px #fff;
+    box-shadow:0px 0px 5px 0px rgba(246, 212, 163, 0.5) inset, 0px -1px 5px 4px rgba(170, 77, 27, 0.2) inset, 0px 0px 0px 7px #fff,  1px 4px 5px 8px rgba(188, 188, 188, 0.6), 0px 0px 0px 9px #fff;
+}
+
+.a-btn:hover span:nth-child(3)
+{
+    opacity:1;
+}
+
+.a-btn:hover span:nth-child(2)
+{
+    opacity: 0; 
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    transform: scale(0); /* transform : permet de manipuler un élément HTML sur les axes X et Y (horizontal et vertical) il y a :
+    - Translation (translate),
+    - Mise à l'échelle (scale),
+    - Rotation (rotate)
+    - Inclinaison (skew)
+    - Matrice de transformation (matrix) */
+}
+
+.a-btn:hover span:nth-child(1)
+{
+    -webkit-animation:rotate 1s linear;
+    -moz-animation:rotate 1s linear;
+    animation:rotate 1s linear;
+}
+
+.a-btn:active
+{
+    -webkit-box-shadow:0px 0px 5px 0px rgba(246, 212, 163, 0.5) inset, 0px -1px 5px 4px rgba(170, 77, 27, 0.2) inset, 0px 0px 0px 7px #fff,  0px -1px 0px 8px rgba(188, 188, 188, 0.3), 0px 0px 0px 10px #fff;
+    -moz-box-shadow:0px 0px 5px 0px rgba(246, 212, 163, 0.5) inset, 0px -1px 5px 4px rgba(170, 77, 27, 0.2) inset, 0px 0px 0px 7px #fff,  0px -1px 0px 8px rgba(188, 188, 188, 0.3), 0px 0px 0px 10px #fff;
+    box-shadow:0px 0px 5px 0px rgba(246, 212, 163, 0.5) inset, 0px -1px 5px 4px rgba(170, 77, 27, 0.2) inset, 0px 0px 0px 7px #fff,  0px -1px 0px 8px rgba(188, 188, 188, 0.3), 0px 0px 0px 10px #fff;
+}
+
+.a-btn:active span:nth-child(2)
+{
+    color:rgba(170, 77, 27, 0.8);
+    text-shadow:0px 1px 1px rgba(255, 255, 255, 0.6);
+}
+
+@keyframes rotate
+{
+    0% { transform: scale(1) rotate(0);}
+    50% { transform: scale(0.5) rotate(180deg);}
+    100% { transform: scale(1) rotate(360deg);}
+}
+@-webkit-keyframes rotate
+{
+    0% { -webkit-transform: scale(1) rotate(0);}
+    50% { -webkit-transform: scale(0.5) rotate(180deg);}
+    100% { -webkit-transform: scale(1) rotate(360deg);}
+}
+@-moz-keyframes rotate
+{
+    0% { -moz-transform: scale(1) rotate(0);}
+    50% { -moz-transform: scale(0.5) rotate(180deg);}
+    100% { -moz-transform: scale(1) rotate(360deg);}
+}
